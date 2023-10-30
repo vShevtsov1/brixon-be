@@ -18,7 +18,7 @@ public class projects {
     @Id
     private String _id;
     private String userId;
-    private String developer;
+    private String imageSrc;
     private String imageSrcMain;
     private String selectedType;
     private String selectedYear;
@@ -47,15 +47,16 @@ public class projects {
 
     private boolean activeProject = true;
 
-    public projects(String userId, String developer, String imageSrcMain, String selectedType, String selectedYear, String selectedMonth, String selectedBathroom, String selectedBedrooms, String selectedStatus, String projectName, String priceFrom, String sizeFrom, String selectedLocation, String ownLocation, String lng, String lat, String exterior, String description, Map<String, List<PlanData>> plans, List<String> architectureGallery, List<String> interiorGallery, List<infrastructureImages> infrastructures, Map<String, paymentPlan> paymentPlans) {
+    public projects(String userId, String imageSrc, String imageSrcMain, String selectedType, String selectedYear, String selectedMonth, String selectedBathroom, String selectedBedrooms, String selectedProperty, String selectedStatus, String projectName, String priceFrom, String sizeFrom, String selectedLocation, String ownLocation, String lng, String lat, String exterior, String description, String descriptionRu, Map<String, List<PlanData>> plans, List<String> architectureGallery, List<String> interiorGallery, List<infrastructureImages> infrastructures, Map<String, paymentPlan> paymentPlans, boolean activeProject) {
         this.userId = userId;
-        this.developer = developer;
+        this.imageSrc = imageSrc;
         this.imageSrcMain = imageSrcMain;
         this.selectedType = selectedType;
         this.selectedYear = selectedYear;
         this.selectedMonth = selectedMonth;
         this.selectedBathroom = selectedBathroom;
         this.selectedBedrooms = selectedBedrooms;
+        this.selectedProperty = selectedProperty;
         this.selectedStatus = selectedStatus;
         this.projectName = projectName;
         this.priceFrom = priceFrom;
@@ -66,12 +67,12 @@ public class projects {
         this.lat = lat;
         this.exterior = exterior;
         this.description = description;
+        this.descriptionRu = descriptionRu;
         this.plans = plans;
         this.architectureGallery = architectureGallery;
         this.interiorGallery = interiorGallery;
         this.infrastructures = infrastructures;
         PaymentPlans = paymentPlans;
+        this.activeProject = activeProject;
     }
-
-
 }

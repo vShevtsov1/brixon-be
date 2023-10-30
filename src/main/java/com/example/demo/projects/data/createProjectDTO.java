@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class createProjectDTO {
-    private String developer;
+    private MultipartFile imageSrc;
     private MultipartFile imageSrcMain;
     private String selectedType;
     private String selectedYear;
