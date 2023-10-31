@@ -23,7 +23,7 @@ public class projectsService {
         String uuid = UUID.randomUUID().toString();
         projects projects = new projects();
         projects.setUserId(userRepo.findByEmail(email).get_id());
-        projects.setImageSrc(s3Service.uploadPhoto(uuid,createProjectDTO.getImageSrc()));
+        projects.setDeveloper(createProjectDTO.getDeveloper());
         projects.setImageSrcMain(s3Service.uploadPhoto(uuid,createProjectDTO.getImageSrcMain()));
         projects.setProjectName(createProjectDTO.getProjectName());
         projects.setSelectedType(createProjectDTO.getSelectedType());

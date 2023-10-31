@@ -18,7 +18,7 @@ public class projects {
     @Id
     private String _id;
     private String userId;
-    private String imageSrc;
+    private String developer;
     private String imageSrcMain;
     private String selectedType;
     private String selectedYear;
@@ -47,9 +47,9 @@ public class projects {
 
     private boolean activeProject = true;
 
-    public projects(String userId, String imageSrc, String imageSrcMain, String selectedType, String selectedYear, String selectedMonth, String selectedBathroom, String selectedBedrooms, String selectedProperty, String selectedStatus, String projectName, String priceFrom, String sizeFrom, String selectedLocation, String ownLocation, String lng, String lat, String exterior, String description, String descriptionRu, Map<String, List<PlanData>> plans, List<String> architectureGallery, List<String> interiorGallery, List<infrastructureImages> infrastructures, Map<String, paymentPlan> paymentPlans, boolean activeProject) {
+    public projects(String userId, String developer, String imageSrcMain, String selectedType, String selectedYear, String selectedMonth, String selectedBathroom, String selectedBedrooms, String selectedProperty, String selectedStatus, String projectName, String priceFrom, String sizeFrom, String selectedLocation, String ownLocation, String lng, String lat, String exterior, String description, String descriptionRu, Map<String, List<PlanData>> plans, List<String> architectureGallery, List<String> interiorGallery, List<infrastructureImages> infrastructures, Map<String, paymentPlan> paymentPlans, boolean activeProject) {
         this.userId = userId;
-        this.imageSrc = imageSrc;
+        this.developer = developer;
         this.imageSrcMain = imageSrcMain;
         this.selectedType = selectedType;
         this.selectedYear = selectedYear;
